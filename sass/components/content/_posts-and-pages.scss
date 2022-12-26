@@ -1,0 +1,53 @@
+.prothom-row{
+	padding: 3.75rem 0; /* 60/16 */
+}
+
+.site-main{
+	.byline{
+		padding-right: 20px;
+	}
+
+	.cat-links{
+		padding-right: 20px;
+	}
+
+	.readMoreButton{
+		margin-top: 13px;
+		a{
+			color: $color__link-hover;
+			font-weight: var(--prothom-fw-600);
+		}
+	}
+
+	.post-thumbnail{
+		img{
+			margin-top: 0.625rem  /* 10/16 */;
+		}
+	}
+}
+
+
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0.8125rem 0 0; /* 13/16 */
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+

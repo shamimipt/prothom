@@ -1,0 +1,40 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font__heading;
+	line-height: $font__line-height-heading;
+	color: $color__link;
+}
+
+h1{
+	font-size: var(--prothom-fs-h1-size);
+	font-weight: var(--prothom-fw-700);
+}
+
+h2{
+	font-size: var(--prothom-fs-h2-size);
+	font-weight: var(--prothom-fw-700);
+}
+
+h3{
+	font-size: var(--prothom-fs-h3-size);
+	font-weight: var(--prothom-fw-600);
+}
+
+h4{
+	font-size: var(--prothom-fs-h4-size);
+	font-weight: var(--prothom-fw-600);
+}
+
+h5{
+	font-size: var(--prothom-fs-h5-size);
+	font-weight: var(--prothom-fw-600);
+}
+
+h6{
+	font-size: var(--prothom-fs-h6-size);
+	font-weight: var(--prothom-fw-600);
+}
