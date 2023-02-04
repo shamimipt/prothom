@@ -99,7 +99,7 @@ function prothom_setup() {
 	/**
 	 * Add support for Wp block style
 	 */
-	add_theme_support( "wp-block-styles" );
+	add_theme_support( 'wp-block-styles' );
 
 	// Enqueue editor styles.
 	add_editor_style( 'style.css' );
@@ -107,12 +107,12 @@ function prothom_setup() {
 	/**
 	 * Add support for Align Wide
 	 */
-	add_theme_support( "align-wide" );
+	add_theme_support( 'align-wide' );
 
 	/**
 	 * Add support for Responsive Embeds
 	 */
-	add_theme_support( "responsive-embeds" );
+	add_theme_support( 'responsive-embeds' );
 
 }
 add_action( 'after_setup_theme', 'prothom_setup' );

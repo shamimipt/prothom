@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is for register widget to wordpress
+ * This file is for register widget to WordPress
  *
  * @package Prothom
  */

@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is Enqueue script and style to wordpress
+ * This file is Enqueue script and style to WordPress
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *

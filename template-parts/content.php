@@ -34,13 +34,8 @@
 
 	<div class="entry-content">
 		<?php
-        if ( is_singular() ) {
-            the_content();
-        } elseif ( ! has_excerpt() ) {
-            esc_html_e(wp_trim_words(get_the_content(), 100, ''));
-        }else{
-            the_excerpt();
-        }
+
+		the_content();
 
 		wp_link_pages(
 			array(
@@ -50,11 +45,12 @@
 		);
 		?>
 	</div><!-- .entry-content -->
-    <?php if ( ! is_singular() ) { ?>
-    <div class="entry-footer readMoreButton">
-        <a href="<?php the_permalink();?>">
-            <span><?php esc_html_e('Read More','prothom')?></span> <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-        </a>
-    </div>
-    <?php } ?>
+	<?php if ( ! is_singular() ) { ?>
+		<div class="entry-footer readMoreButton">
+			<a href="<?php the_permalink(); ?>">
+				<span><?php esc_html_e( 'Read More', 'prothom' ); ?>
+				</span> <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+			</a>
+		</div>
+	<?php } ?>
 </article><!-- #post-<?php the_ID(); ?> -->
