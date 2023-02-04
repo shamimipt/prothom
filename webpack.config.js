@@ -72,8 +72,9 @@ const projectFiles = {
             // 'ayyash-new': projectPaths.projectJsPath + '/ayyash-new.js',
             // scripts:  projectPaths.projectJsPath + '/scripts.js',
             customizer:  projectPaths.projectJsPath + '/customizer.js',
-            'yith-admin-helper':  projectPaths.projectJsPath + '/yith-admin-helper.js',
-            'yith-frontend-helper':  projectPaths.projectJsPath + '/yith-frontend-helper.js',
+            'prothom-main':  projectPaths.projectJsPath + '/prothom-main.js',
+            //'yith-admin-helper':  projectPaths.projectJsPath + '/yith-admin-helper.js',
+            //'yith-frontend-helper':  projectPaths.projectJsPath + '/yith-frontend-helper.js',
             // we had to export some scss separately.
             ...getScssEntries( projectPaths.projectScssPath )
         },
