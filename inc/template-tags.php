@@ -5,6 +5,7 @@
  * Eventually, some of the functionality here could be replaced by core features.
  *
  * @package Prothom
+ * @since 1.0.0
  */
 
 if ( ! function_exists( 'prothom_posted_on' ) ) :
@@ -26,7 +27,7 @@ if ( ! function_exists( 'prothom_posted_on' ) ) :
 		);
 
 		$posted_on = sprintf(
-			/* translators: %s: post date. */
+		/* translators: %s: post date. */
 			esc_html_x( 'Posted on %s', 'post date', 'prothom' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
@@ -42,7 +43,7 @@ if ( ! function_exists( 'prothom_posted_by' ) ) :
 	 */
 	function prothom_posted_by() {
 		$byline = sprintf(
-			/* translators: %s: post author. */
+		/* translators: %s: post author. */
 			esc_html_x( 'by %s', 'post author', 'prothom' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
@@ -99,20 +100,20 @@ if ( ! function_exists( 'prothom_post_thumbnail' ) ) :
 
 			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
-					the_post_thumbnail(
-						'post-thumbnail',
-						array(
-							'alt' => the_title_attribute(
-								array(
-									'echo' => false,
-								)
-							),
-						)
-					);
+				the_post_thumbnail(
+					'post-thumbnail',
+					array(
+						'alt' => the_title_attribute(
+							array(
+								'echo' => false,
+							)
+						),
+					)
+				);
 				?>
 			</a>
 
-			<?php
+		<?php
 		endif; // End is_singular().
 	}
 endif;
@@ -127,3 +128,47 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' );
 	}
 endif;
+
+if ( ! function_exists( 'prothom_the_post_pagination' ) ) {
+	/**
+	 * Prints the next and previous posts navigation
+	 *
+	 * @return void
+	 */
+	function prothom_the_post_pagination() {
+		the_posts_pagination(
+			array(
+				'mid_size'  => 2,
+				'class'     => 'volcano-pagination',
+				'prev_text' => sprintf(
+					'<i class="%s" aria-hidden="true"></i>',
+					is_rtl() ? 'ti-arrow-right' : 'ti-arrow-left'
+				),
+				'next_text' => sprintf(
+					'<i class="%s" aria-hidden="true"></i>',
+					is_rtl() ? 'ti-arrow-left' : 'ti-arrow-right'
+				),
+			)
+		);
+	}
+}
+
+if ( ! function_exists( 'readmorebutton' ) ) {
+	function readmorebutton() {
+		?>
+
+		<div class="entry-footer readMoreButton">
+			<a href="<?php the_permalink(); ?>">
+				<?php
+				printf( '<span>%1s</span> %2s',
+					esc_html__( 'Read More', 'prothom' ),
+					'<i class="ti-arrow-right" aria-hidden="true"></i>' );
+				?>
+			</a>
+		</div>
+
+		<?php
+	}
+}
+
+

@@ -2,6 +2,10 @@
 	padding: 3.75rem 0; /* 60/16 */
 }
 
+.site-content {
+	background-color: #FBFBFB;
+}
+
 .site-main{
 	.byline{
 		padding-right: 20px;
@@ -49,5 +53,17 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.post {
+	background: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 20px rgb(0 0 0 / 3%);
+
+	.post-thumbnail{
+		margin-bottom: 10px;
+		display: block;
+	}
 }
 

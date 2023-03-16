@@ -21,6 +21,7 @@
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
+
 		?>
 			<div class="entry-meta">
 				<?php
@@ -31,11 +32,9 @@
 			</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-		<?php
-
-		the_content();
-
-		?>
+	<div class="entry-summary">
+		<?php the_excerpt(); ?>
+		<?php readmorebutton(); ?>
 	</div><!-- .entry-content -->
+
 </article><!-- #post-<?php the_ID(); ?> -->

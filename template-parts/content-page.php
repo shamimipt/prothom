@@ -5,6 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Prothom
+ * @since 1.0.0
  */
 
 ?>
