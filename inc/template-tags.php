@@ -139,7 +139,7 @@ if ( ! function_exists( 'prothom_the_post_pagination' ) ) {
 		the_posts_pagination(
 			array(
 				'mid_size'  => 2,
-				'class'     => 'volcano-pagination',
+				'class'     => 'prothom-pagination',
 				'prev_text' => sprintf(
 					'<i class="%s" aria-hidden="true"></i>',
 					is_rtl() ? 'ti-arrow-right' : 'ti-arrow-left'
