@@ -20,6 +20,10 @@
 		a{
 			color: $color__link-hover;
 			font-weight: var(--prothom-fw-600);
+
+			i{
+				font-size: 0.8125rem
+			}
 		}
 	}
 
@@ -67,3 +71,13 @@
 	}
 }
 
+.prothom-pagination{
+	.nav-links{
+		display: flex;
+		justify-content: center;
+		column-gap: 10px;
+		.current{
+			color: $color__link-hover;
+		}
+	}
+}
