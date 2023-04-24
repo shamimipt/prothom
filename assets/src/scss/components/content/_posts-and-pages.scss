@@ -18,11 +18,14 @@
 	.readMoreButton{
 		margin-top: 13px;
 		a{
-			color: $color__link-hover;
+			color: #fff;
 			font-weight: var(--prothom-fw-600);
+			background-color: $color__link-hover;
+			padding: 10px 15px;
 
 			i{
-				font-size: 0.8125rem
+				font-size: 0.8125rem;
+				margin-left: 5px;
 			}
 		}
 	}
@@ -78,6 +81,13 @@
 		column-gap: 10px;
 		.current{
 			color: $color__link-hover;
+		}
+
+		a {
+			i {
+				font-size: 14px;
+				line-height: 2;
+			}
 		}
 	}
 }
