@@ -1,4 +1,4 @@
-( function( $ ) {
+( function ( $ ) {
 	// const openBtn = document.getElementById( 'mobile-button-open' );
 	// const closeBtn = document.getElementById( 'mobile-button-close' );
 
@@ -10,8 +10,9 @@
 	// 	document.getElementById( 'mobile-toggle-menu' ).style.width = '0';
 	// } );
 
-	jQuery(document).ready(function(){
-    	jQuery('ul.sf-menu').superfish();
-  	});
+	$(document).ready(function () {
+		$('ul.sf-menu').superfish();
+	});
 
+// eslint-disable-next-line no-undef
 }(jquery) );

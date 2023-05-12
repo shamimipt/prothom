@@ -1,6 +1,9 @@
-#masthead {
-  border-bottom: 1px solid #ddd;
+.site-header {
+	box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
+	z-index: 1;
+	position: relative;
 }
+
 .prothom-main-header-wrapper {
   display: flex;
   align-items: center;
