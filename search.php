@@ -4,6 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
+ * @since 1.0
  * @package Prothom
  */
 
@@ -29,13 +30,13 @@ get_header();
 						/* Start the Loop */
 						while ( have_posts() ) :
 							the_post();
-							get_template_part( 'template-parts/content', 'search' );
+							get_template_part( 'template-parts/content/content', 'search' );
 						endwhile;
 
 						prothom_the_post_pagination();
 					else :
 
-						get_template_part( 'template-parts/content', 'none' );
+						get_template_part( 'template-parts/content/content', 'none' );
 					endif;
 					?>
 				</main><!-- #main -->

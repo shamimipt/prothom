@@ -4,6 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
+ * @since 1.0
  * @package Prothom
  */
 

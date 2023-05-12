@@ -9,8 +9,8 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
+ * @since 1.0
  * @package Prothom
- * @since 1.0.0
  */
 
 get_header();
@@ -25,7 +25,7 @@ get_header();
 							/* Start the Loop */
 							while ( have_posts() ) :
 								the_post();
-								get_template_part( 'template-parts/content', 'excerpt' );
+								get_template_part( 'template-parts/content/content', 'excerpt' );
 
 							endwhile;
 
@@ -33,7 +33,7 @@ get_header();
 
 						else :
 
-							get_template_part( 'template-parts/content', 'none' );
+							get_template_part( 'template-parts/content/content', 'none' );
 
 						endif;
 						?>

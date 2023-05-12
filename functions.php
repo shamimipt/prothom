@@ -4,6 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
+ * @since 1.0
  * @package Prothom
  */
 
