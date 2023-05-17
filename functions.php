@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( ! defined( 'PROTHOM_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'PROTHOM_VERSION', '1.0.0' );
+	define( 'PROTHOM_VERSION', '1.0.1' );
 }
 
 define( 'PROTHOM_THEME_DIR', untrailingslashit( get_template_directory() ) . '/' );
