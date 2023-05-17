@@ -20,4 +20,6 @@
 	);
 	?>
 </nav><!-- #site-navigation -->
+<?php else :
+printf('<div class="flex-grow-1 has-text-align-right">%1$s</div>', 'Please Add Menu From Admin Panel'); ?>
 <?php endif; ?>
