@@ -647,12 +647,24 @@ textarea {
 .prothom-main-header-wrapper .prothom-main-menu ul li {
   display: inline-block;
   position: relative;
+  background: #fff;
 }
 .prothom-main-header-wrapper .prothom-main-menu ul li a {
   display: block;
   padding-left: 1.25rem;
   font-size: 1.0625rem;
   font-weight: var(--prothom-fw-600);
+  color: #1a1513;
+  border: 0;
+}
+.prothom-main-header-wrapper .sf-arrows .sf-with-ul:after {
+  border-top-color: #000;
+  right: 1.5em;
+}
+.prothom-main-header-wrapper .sf-arrows > li > .sf-with-ul:focus:after,
+.prothom-main-header-wrapper .sf-arrows > li:hover > .sf-with-ul:after,
+.prothom-main-header-wrapper .sf-arrows > .sfHover > .sf-with-ul:after {
+  border-top-color: #000;
 }
 @media (max-width: 992.98px) {
   .prothom-main-header-wrapper .site-branding {
