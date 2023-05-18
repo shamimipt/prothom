@@ -181,7 +181,7 @@ hr {
 
 ul,
 ol {
-  margin: 0 0 0 0.9375rem;
+  margin: 0;
 }
 
 ul {
@@ -428,6 +428,48 @@ textarea {
 
 .bypostauthor {
   display: block;
+}
+
+ol.wp-block-latest-comments {
+  padding: 0;
+}
+
+#respond {
+  background: #fbfbfb;
+  padding: 0 10px 0 10px;
+}
+
+/* Highlight active form field */
+#respond input[type=text], textarea {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+
+#respond input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+textarea:focus {
+  box-shadow: 0 0 5px rgb(81, 203, 238);
+  margin: 5px 1px 3px 0px;
+  border: 2px solid rgb(81, 203, 238);
+}
+
+#author, #email {
+  font-family: "Open Sans", "Droid Sans", Arial;
+  font-style: italic;
+  color: #1d1d1d;
+  letter-spacing: 0.1em;
+}
+
+#url {
+  color: #1d1d1d;
+  font-family: "Luicida Console", "Courier New", "Courier", monospace;
 }
 
 /* Widgets
