@@ -18,7 +18,7 @@ get_header();
 <div class="prothom-row site-content prothom-page-content">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-9">
+			<div class="col-md-8 col-lg-8">
 				<main id="primary" class="site-main">
 					<?php
 					while ( have_posts() ) :
