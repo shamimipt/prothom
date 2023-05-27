@@ -52,6 +52,15 @@
         }
       }
     }
+	  ul.sub-menu li{
+		  display: block;
+
+		   a.sf-with-ul{
+			  &:after{
+				  transform: rotate(-90deg);
+			  }
+		  }
+	  }
   }
 	.sf-arrows .sf-with-ul:after{
 		border-top-color: #000;

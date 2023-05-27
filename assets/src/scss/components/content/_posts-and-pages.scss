@@ -37,6 +37,10 @@
 	}
 }
 
+.entry-title {
+	word-wrap: break-word;
+}
+
 
 .sticky {
 	display: block;
@@ -67,6 +71,7 @@
 	padding: 20px;
 	border-radius: 5px;
 	box-shadow: 0 0 20px rgb(0 0 0 / 3%);
+	overflow: hidden;
 
 	.post-thumbnail{
 		margin-bottom: 10px;
@@ -95,4 +100,9 @@
 			}
 		}
 	}
+}
+
+.error404 form {
+	text-align: center;
+	margin-bottom: 50px;
 }
