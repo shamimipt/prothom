@@ -441,6 +441,14 @@ textarea {
 .comments-area ol {
   list-style: none;
 }
+@media (max-width: 425px) {
+  .comments-area ol {
+    padding-left: 0;
+  }
+  .comments-area ol.children {
+    margin-left: 0;
+  }
+}
 
 .comment-content a {
   word-wrap: break-word;

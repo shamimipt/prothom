@@ -7,6 +7,14 @@
 
 	ol {
 		list-style: none;
+
+		@media (max-width: 425px){
+			padding-left: 0;
+
+			&.children{
+				margin-left: 0;
+			}
+		}
 	}
 
 }
