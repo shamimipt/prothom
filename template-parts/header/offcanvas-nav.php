@@ -21,8 +21,8 @@
 				<?php
 				wp_nav_menu(
 					array(
-						'theme_location'  => 'menu-1',
-						'menu_class'      => 'primary-menu'
+						'theme_location' => 'menu-1',
+						'menu_class'     => 'primary-menu',
 					)
 				);
 				?>
