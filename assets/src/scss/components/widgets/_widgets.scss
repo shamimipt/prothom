@@ -13,6 +13,11 @@
 
 .main-sidebar {
 	padding: 0 0 0 20px;
+
+	@media (max-width: 768px){
+		padding: 0 12px;
+		margin-top: 30px;
+	}
 }
 
 .wp-block-search__button{

@@ -22,6 +22,11 @@
 			font-weight: var(--prothom-fw-600);
 			background-color: $color__link-hover;
 			padding: 10px 15px;
+			transition: .3s;
+
+			&:hover{
+				background-color: $color__link;
+			}
 
 			i{
 				font-size: 0.8125rem;

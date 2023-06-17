@@ -27,6 +27,7 @@ function prothom_scripts() {
 	//JS File
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'prothom-superfish', PROTHOM_THEME_URI . 'assets/plugins/superfish/js/superfish.min.js', array( 'jquery' ), PROTHOM_VERSION, true );
+	wp_enqueue_script( 'prothom-bootstrap', PROTHOM_THEME_URI . 'assets/plugins/bootstrap.bundle.min.js', array( 'jquery' ), PROTHOM_VERSION, true );
 	wp_enqueue_script( 'prothom-customizer', PROTHOM_THEME_URI . 'assets/dist/js/customizer.js', array( 'jquery' ), PROTHOM_VERSION, true );
 	wp_enqueue_script( 'prothom-main', PROTHOM_THEME_URI . 'assets/dist/js/prothom-main.js', array( 'jquery' ), PROTHOM_VERSION, true );
 

@@ -9,9 +9,11 @@ input[type="submit"] {
 	line-height: 1;
 	padding: 0.625rem  0.9375rem  /* 15/16 */;
 	color: #fff;
+	transition: .3s;
 
 	&:hover {
 		border-color: transparent;
+		background-color: $color__link;
 	}
 
 	&:active,
