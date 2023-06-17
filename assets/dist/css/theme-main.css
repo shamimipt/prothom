@@ -438,6 +438,9 @@ textarea {
   padding: 20px;
   border-radius: 5px;
 }
+.comments-area ol {
+  list-style: none;
+}
 
 .comment-content a {
   word-wrap: break-word;
@@ -449,6 +452,38 @@ textarea {
 
 ol.wp-block-latest-comments {
   padding: 0;
+}
+
+h2.comments-title {
+  margin-bottom: 20px;
+}
+
+.comment-author.vcard {
+  display: flex;
+  gap: 11px;
+}
+
+.comment-metadata {
+  display: flex;
+  gap: 15px;
+  margin-left: 44px;
+  margin-top: -19px;
+  margin-bottom: 12px;
+}
+
+b.fn {
+  margin-top: -6px;
+}
+
+span.says {
+  margin-top: -6px;
+}
+
+.reply {
+  margin-bottom: 21px;
+}
+.reply a {
+  color: #DE1419;
 }
 
 /* Widgets

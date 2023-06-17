@@ -4,6 +4,11 @@
 	background: #fff;
 	padding: 20px;
 	border-radius: 5px;
+
+	ol {
+		list-style: none;
+	}
+
 }
 
 .comment-content a {
@@ -18,24 +23,37 @@ ol.wp-block-latest-comments{
 	padding: 0;
 }
 
-#respond { }
-#reply-title { }
-#cancel-comment-reply-link { }
-#commentform { }
-#author { }
-#email { }
-#url { }
-#comment{}
-#submit{}
-.comment-notes { }
-.required { }
-.comment-form-author { }
-.comment-form-email { }
-.comment-form-url { }
-.comment-form-comment { }
-.comment-form-cookies-consent { }
-.form-allowed-tags { }
-.form-submit{}
+h2.comments-title {
+	margin-bottom: 20px;
+}
+
+.comment-author.vcard {
+	display: flex;
+	gap: 11px;
+}
+
+.comment-metadata {
+	display: flex;
+	gap: 15px;
+	margin-left: 44px;
+	margin-top: -19px;
+	margin-bottom: 12px;
+}
+
+b.fn {
+	margin-top: -6px;
+}
+
+span.says {
+	margin-top: -6px;
+}
+
+.reply {
+	margin-bottom: 21px;
+	a{
+		color: $color__border-button;
+	}
+}
 
 
 
