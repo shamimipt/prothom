@@ -10,8 +10,8 @@
  * @package Prothom
  */
 
+do_action( 'prothom_before_footer' );
 ?>
-
 	<footer id="colophon" class="site-footer text-center">
 		<div class="container">
 			<div class="row">
@@ -31,9 +31,11 @@
 			</div>
 		</div>
 	</footer><!-- #colophon -->
+<?php do_action( 'prothom_after_footer' ); ?>
 </div><!-- #page -->
-
-<?php wp_footer(); ?>
+<?php
+do_action( 'prothom_after_page' );
+wp_footer(); ?>
 
 </body>
 </html>
