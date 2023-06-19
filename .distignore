@@ -49,7 +49,6 @@ node_modules
 *.zip
 .wordpress-org
 .idea
-dist
 logs
 src
 assets/src
