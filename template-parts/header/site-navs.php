@@ -20,6 +20,6 @@
 		);
 		?>
 	</nav><!-- #site-navigation -->
-<?php else :
-	printf( '<div class="flex-grow-1 has-text-align-right">%1$s</div>', 'Please Add Menu From Admin Panel' ); ?>
+<?php else : ?>
+	<div class="flex-grow-1 has-text-align-right"><a href="<?php echo esc_url( admin_url( 'nav-menus.php' ) ); ?>" class="prothom-sticky-item"><?php esc_html_e( 'No Menu Assigned , Please Add', 'prothom' ); ?></a></div>
 <?php endif; ?>
