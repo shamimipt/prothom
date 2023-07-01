@@ -34,7 +34,7 @@
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-		<?php readmorebutton(); ?>
+		<?php prothom_readmorebutton(); ?>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -29,7 +29,7 @@
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-		<?php readmorebutton(); ?>
+		<?php prothom_readmorebutton(); ?>
 	</div><!-- .entry-summary -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

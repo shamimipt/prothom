@@ -153,8 +153,8 @@ if ( ! function_exists( 'prothom_the_post_pagination' ) ) {
 	}
 }
 
-if ( ! function_exists( 'readmorebutton' ) ) {
-	function readmorebutton() {
+if ( ! function_exists( 'prothom_readmorebutton' ) ) {
+	function prothom_readmorebutton() {
 		?>
 
 		<div class="entry-footer readMoreButton">
