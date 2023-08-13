@@ -1,1 +1,14 @@
-!function(u,n,e){"use strict";u(e).ready((function(){u("ul.sf-menu").superfish()}))}(jQuery,window,document);
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!***************************************!*\
+  !*** ./assets/src/js/prothom-main.js ***!
+  \***************************************/
+(function ($, window, document) {
+  "use strict";
+
+  $(document).ready(function () {
+    $('ul.sf-menu').superfish();
+  });
+})(jQuery, window, document);
+/******/ })()
+;
