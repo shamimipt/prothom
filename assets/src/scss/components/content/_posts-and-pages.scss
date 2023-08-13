@@ -23,6 +23,7 @@
 			background-color: $color__link-hover;
 			padding: 10px 15px;
 			transition: .3s;
+			text-decoration: none;
 
 			&:hover{
 				background-color: $color__link;
